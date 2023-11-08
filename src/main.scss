@@ -1,0 +1,108 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$primary : #1b1e50;
+$secondary: #fcb040;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@import "../node_modules/tiny-slider/dist/tiny-slider.css";
+
+:root{
+    --bs-body-font-family:'Lato', sans-serif;
+    // --bs-light-rgb:#000;
+}
+
+// Then add additional custom code here
+
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show{
+    color: $secondary;
+    font-weight: 700;
+}
+.navbar-expand-lg .navbar-nav 
+.nav-link{padding:0 20px;}
+
+.bg-hero{
+    background: rgb(2,7,164);
+    background: linear-gradient(116deg, rgba(2,7,164,1) 0%, rgba(0,0,85,1) 49%, rgba(2,7,164,1) 100%);
+}
+
+header.masthead h1, header.masthead .h1 {
+    font-size: 2.25rem;
+    letter-spacing: 2em;
+}
+@media (min-width: 992px) {
+    header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+    }
+    header.masthead p {
+    font-size: 1.15rem;
+    }
+    header.masthead h1, header.masthead .h1 {
+    font-size: 3rem;
+    }
+}
+@media (min-width: 1200px) {
+    header.masthead h1, header.masthead .h1 {
+    font-size: 3.5rem;
+    }
+}
+
+.budget-title {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.tab-view li.nav-item:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.tab-view li.nav-item:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.tab-view li.nav-item {
+    background: #ecf3f9;
+    border-radius: 0;
+}
+.tab-img img {
+    position: absolute;
+    top: -105px;
+    width: 420px;
+    right: 0;
+}
+.mock-img img {
+    width: 290px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+.case-study button[data-controls=next], 
+.case-study button[data-controls=prev]{
+    align-items: center;
+    background-color:#e5eff7;
+    border-radius: 50%;
+    border: 0;
+    top: 50%;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    position: absolute;
+    z-index: 9
+}
+.case-study button[data-controls=next]{
+    right: -60px;
+}
+.case-study button[data-controls=prev]{
+    left: -60px;
+}
+
+
