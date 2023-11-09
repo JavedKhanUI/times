@@ -26,34 +26,91 @@ $secondary: #fcb040;
 .navbar-expand-lg .navbar-nav 
 .nav-link{padding:0 20px;}
 
-.bg-hero{
+header {
+    position: relative;
     background: rgb(2,7,164);
     background: linear-gradient(116deg, rgba(2,7,164,1) 0%, rgba(0,0,85,1) 49%, rgba(2,7,164,1) 100%);
-}
-
-header.masthead h1, header.masthead .h1 {
-    font-size: 2.25rem;
-    letter-spacing: 2em;
-}
-@media (min-width: 992px) {
-    header.masthead {
     height: 100vh;
-    min-height: 40rem;
-    padding-top: 4.5rem;
-    padding-bottom: 0;
-    }
-    header.masthead p {
-    font-size: 1.15rem;
-    }
-    header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
-    }
-}
-@media (min-width: 1200px) {
-    header.masthead h1, header.masthead .h1 {
-    font-size: 3.5rem;
-    }
-}
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(2,7,164);
+    background: linear-gradient(116deg, rgba(2,7,164,1) 0%, rgba(0,0,85,1) 49%, rgba(2,7,164,1) 100%);
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+//   @media (pointer: coarse) and (hover: none) {
+//     header {
+//       background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+//     }
+  
+//     header video {
+//       display: none;
+//     }
+//   }
+
+
+// .bg-hero{
+//     background: rgb(2,7,164);
+//     background: linear-gradient(116deg, rgba(2,7,164,1) 0%, rgba(0,0,85,1) 49%, rgba(2,7,164,1) 100%);
+// }
+
+// header.masthead h1, header.masthead .h1 {
+//     font-size: 2.25rem;
+//     letter-spacing: 2em;
+// }
+// @media (min-width: 992px) {
+//     header.masthead {
+//     height: 100vh;
+//     min-height: 40rem;
+//     padding-top: 4.5rem;
+//     padding-bottom: 0;
+//     }
+//     header.masthead p {
+//     font-size: 1.15rem;
+//     }
+//     header.masthead h1, header.masthead .h1 {
+//     font-size: 3rem;
+//     }
+// }
+// @media (min-width: 1200px) {
+//     header.masthead h1, header.masthead .h1 {
+//     font-size: 3.5rem;
+//     }
+// }
 
 .budget-title {
     font-weight: 400;
@@ -71,13 +128,13 @@ header.masthead h1, header.masthead .h1 {
     background: #ecf3f9;
     border-radius: 0;
 }
-.tab-img img {
+.tab-img {
     position: absolute;
     top: -105px;
     width: 420px;
     right: 0;
 }
-.mock-img img {
+.mock-img{
     width: 290px;
     position: absolute;
     top: -50px;
@@ -105,4 +162,53 @@ header.masthead h1, header.masthead .h1 {
     left: -60px;
 }
 
+// `xs` returns only a ruleset and no media query
+// ... { ... }
 
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    header {
+        height: 25vh;
+        min-height: auto;
+        width: 100%;
+        top: 60px;
+    }
+    header video {
+        width: 100%;
+    }
+    .budget-title {font-size: 1rem; }
+
+    .tab-img {
+        position: unset;
+        width: 100%;
+    }
+    .mock-img {
+        right: 0;
+        margin: 0 auto;
+        left: 0;
+    }
+    .case-study button[data-controls=next], 
+    .case-study button[data-controls=prev] {
+        top: 40%;
+        height: 40px;
+        width: 40px;
+    }
+    .case-study button[data-controls=prev] {
+        left: 0;
+    }
+    .case-study button[data-controls=next] {
+        right: 0px;
+    }
+ }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {  }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {  }
