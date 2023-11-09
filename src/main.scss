@@ -145,17 +145,31 @@ header {
     font-size: 26px;
     margin-bottom: 0px;
 }
-.client-feed .card.card-body:before {
+.client-feed .card.card-body::before {
     content: "";
     background: url("assets/right-quote.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: -30px;
+    top: 0px;
     right: 0;
     height: 100px;
     width: 100px;
     background-size: 60px;
     overflow: visible;
+}
+
+.client-feed .card.card-body::after {
+    content: "";
+    background: url("assets/right-quote.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:0px;
+    left:0;
+    height: 100px;
+    width: 100px;
+    background-size: 60px;
+    overflow: visible;
+    transform: rotate(180deg);
 }
 
 // `xs` returns only a ruleset and no media query
@@ -216,6 +230,19 @@ header {
     }
     .case-study button[data-controls=next] {
         right: 0px;
+    }
+    .client-comment p {
+        font-size: 16px;
+    }
+    .client-testimonial .tns-controls button[data-controls=prev] {
+        left: 0px;
+    }
+    .client-testimonial .tns-controls button[data-controls=next] {
+        right: 0px;
+    }
+    .client-feed .card.card-body::before, 
+    .client-feed .card.card-body::after{
+        display: none;
     }
  }
 
