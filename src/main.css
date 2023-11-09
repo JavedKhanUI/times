@@ -12031,8 +12031,25 @@ header .overlay {
   z-index: 1;
 }
 
-/* Media Query for devices withi coarse pointers and no hover functionality */
-/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+.brand-section h2, .brand-section .h2 {
+  font-size: 2.5rem;
+}
+
+.brand-list .brand-fill {
+  background-image: url("assets/element-01.png");
+  background-size: cover;
+  padding: 30px;
+  color: #fff;
+  height: 188px;
+  display: flex;
+  align-items: center;
+}
+
+.brand-list .tns-controls button[data-controls=next],
+.brand-list .tns-controls button[data-controls=prev] {
+  top: 35%;
+}
+
 .budget-title {
   font-weight: 400;
   font-size: 1.5rem;
@@ -12067,8 +12084,8 @@ header .overlay {
   right: 0;
 }
 
-.case-study button[data-controls=next],
-.case-study button[data-controls=prev] {
+.tns-controls button[data-controls=next],
+.tns-controls button[data-controls=prev] {
   align-items: center;
   background-color: #e5eff7;
   border-radius: 50%;
@@ -12082,11 +12099,11 @@ header .overlay {
   z-index: 9;
 }
 
-.case-study button[data-controls=next] {
+.tns-controls button[data-controls=next] {
   right: -60px;
 }
 
-.case-study button[data-controls=prev] {
+.tns-controls button[data-controls=prev] {
   left: -60px;
 }
 
@@ -12100,8 +12117,28 @@ header .overlay {
   header video {
     width: 100%;
   }
+  .brand-section h2, .brand-section .h2 {
+    font-size: 1.5rem;
+  }
   .budget-title {
     font-size: 1rem;
+  }
+  .brand-list .brand-fill {
+    padding: 20px;
+    color: #fff;
+    height: 210px;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .brand-list .tns-controls button[data-controls=next],
+  .brand-list .tns-controls button[data-controls=prev] {
+    top: 100%;
+  }
+  .brand-list .tns-controls button[data-controls=next] {
+    right: 100px;
+  }
+  .brand-list .tns-controls button[data-controls=prev] {
+    left: 100px;
   }
   .tab-img {
     position: unset;
