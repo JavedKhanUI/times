@@ -12095,7 +12095,7 @@ header .overlay {
     height: 25vh;
     min-height: auto;
     width: 100%;
-    top: 60px;
+    margin-top: 60px;
   }
   header video {
     width: 100%;
@@ -12108,9 +12108,8 @@ header .overlay {
     width: 100%;
   }
   .mock-img {
-    right: 0;
-    margin: 0 auto;
-    left: 0;
+    width: 100%;
+    position: unset;
   }
   .case-study button[data-controls=next],
   .case-study button[data-controls=prev] {
