@@ -246,6 +246,17 @@ header {
     }
  }
 
+ .footer-heading {
+    color: $secondary;
+    font-size: 18px;
+}
+
+ address span {
+    display: block;
+}
+footer ul li a.nav-link {
+    font-size: 14px;
+}
 // `md` applies to small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {  }
 
@@ -256,4 +267,4 @@ header {
 @media (max-width: 1199.98px) {  }
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {  }
+@media (max-width: 1399.98px) {  } 

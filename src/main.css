@@ -12215,4 +12215,16 @@ header .overlay {
   .client-feed .card.card-body::after {
     display: none;
   }
+}
+.footer-heading {
+  color: #fcb040;
+  font-size: 18px;
+}
+
+address span {
+  display: block;
+}
+
+footer ul li a.nav-link {
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */
