@@ -75,6 +75,9 @@ header {
 
 .brand-section h2 { font-size: 2.5rem;}
 
+.brand-list .tns-controls button[data-controls=next], .brand-list .tns-controls button[data-controls=prev] {
+    background-color: rgb(255 255 255 / 34%);
+}
 
 .brand-fill {
   
@@ -327,10 +330,7 @@ footer ul li a.nav-link {
         height: 26vh;
         margin-top: 85px;
     }
-    .brand-list .tns-controls button[data-controls=next], .brand-list .tns-controls button[data-controls=prev] {
-        background-color: rgb(255 255 255 / 34%);
-        border: 1px solid #fff;
-    }
+    
     .tns-controls button[data-controls=prev] {
         left: 0px;
     }
