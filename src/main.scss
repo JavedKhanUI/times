@@ -65,16 +65,16 @@ header {
     z-index: 1;
   }
   
+.brand-section h2:before {
+    border: 1px solid #fff;
+    position: absolute;
+    content: '';
+    width: 50%;
+    top: -12px;
+}
+
 .brand-section h2 { font-size: 2.5rem;}
 
-// .brand-list .brand-fill{
-//     padding: 22px;
-//     color: #fff;
-//     display: flex;
-//     align-items: center;
-//     border: 1px solid;
-//     border-radius: 10px;
-// }
 
 .brand-fill {
   
@@ -140,6 +140,17 @@ header {
     transform: translate(-50%, -50%);
 }
 
+.platform-img:before {
+    content: '';
+    position: absolute;
+    background-image: url('assets/element-04.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: -9px;
+    width: 100%;
+    height: 10px;
+}
+
 .tns-controls button[data-controls=next], 
 .tns-controls button[data-controls=prev]{
     align-items: center;
@@ -172,26 +183,27 @@ header {
     font-size: 26px;
     margin-bottom: 0px;
 }
-.client-feed .card.card-body::before {
+.client-testimonial::before {
     content: "";
     background: url("assets/right-quote.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 0px;
-    right: 0;
+    top: -30px;
+    right: 30px;
     height: 100px;
     width: 100px;
     background-size: 60px;
     overflow: visible;
+    z-index: 9;
 }
 
-.client-feed .card.card-body::after {
+.client-testimonial::after {
     content: "";
     background: url("assets/right-quote.svg");
     background-repeat: no-repeat;
     position: absolute;
-    bottom:0px;
-    left:0;
+    bottom: -30px;
+    left: 20px;
     height: 100px;
     width: 100px;
     background-size: 60px;
@@ -249,7 +261,8 @@ header {
         width: 100%;
     }
     .mock-img {
-        width: 100%;
+        width: 100% !important;
+        transform: none;
         position: unset;
     }
     .case-study button[data-controls=next], 
@@ -259,11 +272,19 @@ header {
         width: 40px;
     }
     .case-study button[data-controls=prev] {
-        left: 0;
+        left: 0px !important;
     }
     .case-study button[data-controls=next] {
-        right: 0px;
+        right: 0px !important;
     }
+
+    .ad-format .tns-controls button[data-controls=next]{
+        right: -10px;
+    }
+    .ad-format .tns-controls button[data-controls=prev]{
+        left: -10px;
+    }
+
     .client-comment p {
         font-size: 16px;
     }
@@ -336,5 +357,6 @@ footer ul li a.nav-link {
 @media (max-width: 1399.98px) { 
     .mock-img {
         width: 30%;
+        left: 75%;
     }
  } 
