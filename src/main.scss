@@ -67,15 +67,42 @@ header {
   
 .brand-section h2 { font-size: 2.5rem;}
 
-.brand-list .brand-fill{
-    background-image: url('assets/element-01.png');
-    background-size: cover;
-    padding: 30px;
-    color: #fff;
-    height: 188px;
+// .brand-list .brand-fill{
+//     padding: 22px;
+//     color: #fff;
+//     display: flex;
+//     align-items: center;
+//     border: 1px solid;
+//     border-radius: 10px;
+// }
+
+.brand-fill {
+  
     display: flex;
     align-items: center;
-}
+    margin: auto;
+  
+    position: relative;
+    padding:10% 2em;
+    box-sizing: border-box;
+  
+    $border: 5px;
+    color: #FFF;
+    background: #1b1f50;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    border-radius: 1em;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -$border; /* !importanté */
+      border-radius: inherit; /* !importanté */
+      background: linear-gradient(to right, #ffc107, orange);
+    }
+  }
 
 .brand-list .tns-controls button[data-controls=next], 
 .brand-list .tns-controls button[data-controls=prev] {
@@ -100,15 +127,17 @@ header {
 }
 .tab-img {
     position: absolute;
-    top: -105px;
+    top: -75px;
     width: 420px;
     right: 0;
 }
-.mock-img{
-    width: 290px;
+.mock-img {
+    width: 22%;
     position: absolute;
-    top: -50px;
+    top: 50%;
+    left: 85%;
     right: 0;
+    transform: translate(-50%, -50%);
 }
 
 .tns-controls button[data-controls=next], 
@@ -207,6 +236,12 @@ header {
     .brand-list .tns-controls button[data-controls=prev] {
         left: 100px;
     }
+    .tns-controls button[data-controls=next] {
+        right: 0;
+    }
+    .tns-controls button[data-controls=prev] {
+        left: 0;
+    }
 
 
     .tab-img {
@@ -256,13 +291,50 @@ footer ul li a.nav-link {
     font-size: 14px;
 }
 // `md` applies to small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {  }
+@media (max-width: 767.98px) { 
+    .tns-controls button[data-controls=next] {
+        right: 0;
+    }
+    .tns-controls button[data-controls=prev] {
+        left: 0;
+    }
+ }
 
 // `lg` applies to medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { }
+@media (max-width: 991.98px) {
+    header {
+        height: 26vh;
+        margin-top: 85px;
+    }
+    .brand-list .tns-controls button[data-controls=next], .brand-list .tns-controls button[data-controls=prev] {
+        background-color: rgb(255 255 255 / 34%);
+        border: 1px solid #fff;
+    }
+    .tns-controls button[data-controls=prev] {
+        left: 0px;
+    }
+    .tns-controls button[data-controls=next] {
+        right: 0px;
+    }
+    .tab-img {
+        top: -4px;
+        width: 320px;
+    }
+ }
 
 // `xl` applies to large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {  }
+@media (max-width: 1199.98px) { 
+    .tns-controls button[data-controls=next] {
+        right: -25px;
+    }
+    .tns-controls button[data-controls=prev] {
+        left: -25px;
+    }
+ }
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {  } 
+@media (max-width: 1399.98px) { 
+    .mock-img {
+        width: 30%;
+    }
+ } 
