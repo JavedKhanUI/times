@@ -92,9 +92,13 @@ var slider = tns({
           items: 2
         },
         900: {
+          items: 3,
+        },
+        1024: {
+          items: 2,
+        },
+        1400: {
           items: 4,
-          // gutter: 40,
-          // fixedWidth: 300,
         }
       }
   });

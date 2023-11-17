@@ -12159,29 +12159,37 @@ header .overlay {
   margin-bottom: 0px;
 }
 
-.client-testimonial::before {
+.client-list {
+  padding: 50px 0;
+}
+
+.client-feed {
+  position: relative;
+}
+
+.client-feed::before {
   content: "";
   background: url("assets/right-quote.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: -30px;
-  right: 30px;
-  height: 100px;
-  width: 100px;
+  right: 50px;
+  height: 60px;
+  width: 60px;
   background-size: 60px;
   overflow: visible;
   z-index: 9;
 }
 
-.client-testimonial::after {
+.client-feed::after {
   content: "";
   background: url("assets/right-quote.svg");
   background-repeat: no-repeat;
   position: absolute;
   bottom: -30px;
-  left: 20px;
-  height: 100px;
-  width: 100px;
+  left: 50px;
+  height: 60px;
+  width: 60px;
   background-size: 60px;
   overflow: visible;
   transform: rotate(180deg);
@@ -12234,6 +12242,7 @@ header .overlay {
     width: 100% !important;
     transform: none;
     position: unset;
+    text-align: center;
   }
   .case-study button[data-controls=next],
   .case-study button[data-controls=prev] {
@@ -12315,6 +12324,6 @@ footer ul li a.nav-link {
 @media (max-width: 1399.98px) {
   .mock-img {
     width: 30%;
-    left: 75%;
+    left: 80%;
   }
 }/*# sourceMappingURL=main.css.map */
