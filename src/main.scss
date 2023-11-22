@@ -15,6 +15,11 @@ $secondary: #fcb040;
     --bs-body-font-family:'Lato', sans-serif;
 }
 
+a{text-decoration: none;}
+
+main {
+    margin-top: 5em;
+}
 // Then add additional custom code here
 #advertise{
 
@@ -206,6 +211,65 @@ header {
     transform: rotate(180deg);
 }
 
+.footer-heading {
+    color: $secondary;
+    font-size: 18px;
+}
+
+address span {
+    display: block;
+}
+footer ul li a.nav-link {
+    font-size: 14px;
+}
+
+}
+
+.blog-header{
+    background: url('assets/blog-header-01.jpg') no-repeat center;
+    background-size: cover;
+    padding:15em 0 5em;
+    color: #fff;
+    position: relative;
+}
+
+.blog-header:before {
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    position: absolute;
+    background: rgb(27, 30, 81);
+    background: linear-gradient(116deg, rgb(27, 30, 81) 0%, rgba(27, 30, 81, 0.6545211835) 100%);
+    width: 100%;
+    padding: 8em;
+    z-index: 1;
+}
+.blog-headline {
+    z-index: 9;
+    position: relative;
+}
+.blog-headline a{ color:#fff; text-decoration: none;}
+.img-card{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card.card-overlay-bottom:before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+    background-image: linear-gradient(180deg, transparent, black);
+    z-index: 1;
+}
+.img-card a{ color: #fff; text-decoration: none;}
+
 // `xs` returns only a ruleset and no media query
 // ... { ... }
 
@@ -250,7 +314,6 @@ header {
         left: 0;
     }
 
-
     .tab-img {
         position: unset;
         width: 100%;
@@ -294,19 +357,16 @@ header {
     .client-feed .card.card-body::after{
         display: none;
     }
+    .blog-header {
+        padding: 5em 0 5em;
+    }
+    .blog-header:before {
+        content: "";
+        transform: translate(-50%, -50%);
+        padding: 16.7em 0;
+    }
  }
 
- .footer-heading {
-    color: $secondary;
-    font-size: 18px;
-}
-
- address span {
-    display: block;
-}
-footer ul li a.nav-link {
-    font-size: 14px;
-}
 // `md` applies to small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
     .tns-controls button[data-controls=next] {
@@ -353,4 +413,3 @@ footer ul li a.nav-link {
         left: 80%;
     }
  } 
-}
