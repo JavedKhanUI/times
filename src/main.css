@@ -12258,6 +12258,42 @@ footer ul li a.nav-link {
   text-decoration: none;
 }
 
+.blog-area .list-group .list-group-item {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  padding-top: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.block-heading {
+  font-size: 2em;
+  margin-bottom: 0.7em;
+  color: #1b1e50;
+  position: relative;
+}
+
+.block-heading:after {
+  content: "";
+  width: 87%;
+  height: 1px;
+  background: #fcb040;
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+}
+
+.blog-four .col .card .card-body:nth-child(1),
+.blog-four .col .card .card-body:nth-child(2) {
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.podcast-list .card-text {
+  text-align: justify;
+}
+
 @media (max-width: 575.98px) {
   header {
     height: 25vh;
