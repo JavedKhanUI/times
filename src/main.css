@@ -11990,12 +11990,13 @@ main {
   margin-top: 5em;
 }
 
-#advertise .navbar-nav .nav-link.active,
-#advertise .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: #fcb040;
   font-weight: 700;
 }
-#advertise header {
+
+header {
   position: relative;
   background: rgb(2, 7, 164);
   background: linear-gradient(116deg, rgb(2, 7, 164) 0%, rgb(0, 0, 85) 49%, rgb(2, 7, 164) 100%);
@@ -12004,7 +12005,8 @@ main {
   width: 100%;
   overflow: hidden;
 }
-#advertise header video {
+
+header video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12015,11 +12017,13 @@ main {
   z-index: 0;
   transform: translateX(-50%) translateY(-50%);
 }
-#advertise header .container {
+
+header .container {
   position: relative;
   z-index: 2;
 }
-#advertise header .overlay {
+
+header .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -12030,58 +12034,70 @@ main {
   opacity: 0.5;
   z-index: 1;
 }
-#advertise .brand-section h2:before, #advertise .brand-section .h2:before {
+
+.brand-section h2:before, .brand-section .h2:before {
   border: 1px solid #fff;
   position: absolute;
   content: "";
   width: 50%;
   top: -12px;
 }
-#advertise .brand-section h2, #advertise .brand-section .h2 {
+
+.brand-section h2, .brand-section .h2 {
   font-size: 2.5rem;
 }
-#advertise .brand-list .tns-controls button[data-controls=next], #advertise .brand-list .tns-controls button[data-controls=prev] {
+
+.brand-list .tns-controls button[data-controls=next], .brand-list .tns-controls button[data-controls=prev] {
   background-color: rgba(255, 255, 255, 0.34);
 }
-#advertise .brand-fill {
+
+.brand-fill {
   display: flex;
   align-items: center;
   margin: auto;
   padding: 10% 2em;
 }
-#advertise .brand-fill {
+
+.brand-fill {
   background: linear-gradient(#1b1f50, #434881) padding-box, linear-gradient(to right, #ffc107, orange) border-box;
   border-radius: 1em;
   border: 2px solid transparent;
   color: #fff;
 }
-#advertise .brand-list .tns-controls button[data-controls=next],
-#advertise .brand-list .tns-controls button[data-controls=prev] {
+
+.brand-list .tns-controls button[data-controls=next],
+.brand-list .tns-controls button[data-controls=prev] {
   top: 35%;
 }
-#advertise .budget-title {
+
+.budget-title {
   font-weight: 400;
   font-size: 1.5rem;
 }
-#advertise .tab-view li.nav-item:last-child {
+
+.tab-view li.nav-item:last-child {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-#advertise .tab-view li.nav-item:first-child {
+
+.tab-view li.nav-item:first-child {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-#advertise .tab-view li.nav-item {
+
+.tab-view li.nav-item {
   background: #ecf3f9;
   border-radius: 0;
 }
-#advertise .tab-img {
+
+.tab-img {
   position: absolute;
   top: -75px;
   width: 420px;
   right: 0;
 }
-#advertise .mock-img {
+
+.mock-img {
   width: 22%;
   position: absolute;
   top: 50%;
@@ -12089,7 +12105,8 @@ main {
   right: 0;
   transform: translate(-50%, -50%);
 }
-#advertise .platform-img:before {
+
+.platform-img:before {
   content: "";
   position: absolute;
   background-image: url("assets/element-04.png");
@@ -12099,8 +12116,9 @@ main {
   width: 100%;
   height: 10px;
 }
-#advertise .tns-controls button[data-controls=next],
-#advertise .tns-controls button[data-controls=prev] {
+
+.tns-controls button[data-controls=next],
+.tns-controls button[data-controls=prev] {
   align-items: center;
   background-color: #e5eff7;
   border-radius: 50%;
@@ -12113,31 +12131,39 @@ main {
   position: absolute;
   z-index: 9;
 }
-#advertise .tns-controls button[data-controls=next] {
+
+.tns-controls button[data-controls=next] {
   right: -60px;
 }
-#advertise .tns-controls button[data-controls=prev] {
+
+.tns-controls button[data-controls=prev] {
   left: -60px;
 }
-#advertise .client-comment img {
+
+.client-comment img {
   float: left;
   margin: 0 15px 0 0;
 }
-#advertise .client-comment p {
+
+.client-comment p {
   font-size: 24px;
   font-weight: 200;
 }
-#advertise .feed-info .card-title {
+
+.feed-info .card-title {
   font-size: 26px;
   margin-bottom: 0px;
 }
-#advertise .client-list {
+
+.client-list {
   padding: 50px 0;
 }
-#advertise .client-feed {
+
+.client-feed {
   position: relative;
 }
-#advertise .client-feed::before {
+
+.client-feed::before {
   content: "";
   background: url("assets/right-quote.svg");
   background-repeat: no-repeat;
@@ -12150,7 +12176,8 @@ main {
   overflow: visible;
   z-index: 9;
 }
-#advertise .client-feed::after {
+
+.client-feed::after {
   content: "";
   background: url("assets/right-quote.svg");
   background-repeat: no-repeat;
@@ -12163,14 +12190,17 @@ main {
   overflow: visible;
   transform: rotate(180deg);
 }
-#advertise .footer-heading {
+
+.footer-heading {
   color: #fcb040;
   font-size: 18px;
 }
-#advertise address span {
+
+address span {
   display: block;
 }
-#advertise footer ul li a.nav-link {
+
+footer ul li a.nav-link {
   font-size: 14px;
 }
 
