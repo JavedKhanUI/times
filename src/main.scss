@@ -28,7 +28,7 @@ main {
     font-weight: 700;
 }
 
-header {
+.hero-banner {
     position: relative;
     background: rgb(2,7,164);
     background: linear-gradient(116deg, rgba(2,7,164,1) 0%, rgba(0,0,85,1) 49%, rgba(2,7,164,1) 100%);
@@ -38,7 +38,7 @@ header {
     overflow: hidden;
   }
   
-  header video {
+  .hero-banner video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,12 +53,12 @@ header {
     transform: translateX(-50%) translateY(-50%);
   }
   
-  header .container {
+  .hero-banner .container {
     position: relative;
     z-index: 2;
   }
   
-  header .overlay {
+  .hero-banner .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -315,13 +315,13 @@ footer ul li a.nav-link {
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
-    header {
+    .hero-banner {
         height: 25vh;
         min-height: auto;
         width: 100%;
         margin-top: 60px;
     }
-    header video {
+    .hero-banner video {
         width: 100%;
     }
     .brand-section h2 {
@@ -423,7 +423,7 @@ footer ul li a.nav-link {
 
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
-    header {
+    .hero-banner {
         height: 26vh;
         margin-top: 85px;
     }
