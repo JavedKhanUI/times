@@ -12294,6 +12294,15 @@ footer ul li a.nav-link {
   text-align: justify;
 }
 
+.blog-listwise .col {
+  border-right: 1px solid #999;
+}
+
+.blog-listwise .col:nth-child(4),
+.blog-listwise .col:nth-child(8) {
+  border-right: 1px solid #d7d7d7;
+}
+
 @media (max-width: 575.98px) {
   header {
     height: 25vh;
@@ -12381,6 +12390,10 @@ footer ul li a.nav-link {
     content: "";
     transform: translate(-50%, -50%);
     padding: 16.7em 0;
+  }
+  .blog-listwise .col {
+    border-right: 0;
+    border-bottom: 1px solid #999;
   }
 }
 @media (max-width: 767.98px) {
