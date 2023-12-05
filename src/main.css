@@ -12308,6 +12308,17 @@ footer ul li a.nav-link {
   color: #727272;
 }
 
+.subscribe-block {
+  background-color: #ebf2fa;
+}
+
+.subscribe-block {
+  background-image: url("assets/subs-img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
 @media (max-width: 575.98px) {
   .hero-banner {
     height: 25vh;
@@ -12399,6 +12410,9 @@ footer ul li a.nav-link {
   .blog-listwise .col {
     border-right: 0;
     border-bottom: 1px solid #999;
+  }
+  .subscribe-block {
+    background-image: none;
   }
 }
 @media (max-width: 767.98px) {

@@ -309,7 +309,15 @@ footer ul li a.nav-link {
     margin-bottom: 1.25rem;
     color: #727272;
 }
-
+.subscribe-block{
+    background-color: #ebf2fa;
+}
+.subscribe-block {
+    background-image: url("assets/subs-img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
 // `xs` returns only a ruleset and no media query
 // ... { ... }
 
@@ -408,6 +416,9 @@ footer ul li a.nav-link {
     .blog-listwise .col {
         border-right: 0;
         border-bottom: 1px solid #999;
+    }
+    .subscribe-block{
+        background-image: none;
     }
  }
 
