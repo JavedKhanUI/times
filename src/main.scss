@@ -305,6 +305,10 @@ footer ul li a.nav-link {
 .blog-listwise .col:nth-child(8) {
     border-right: 1px solid #d7d7d7;
 }
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #727272;
+}
 
 // `xs` returns only a ruleset and no media query
 // ... { ... }

@@ -12303,6 +12303,11 @@ footer ul li a.nav-link {
   border-right: 1px solid #d7d7d7;
 }
 
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
 @media (max-width: 575.98px) {
   header {
     height: 25vh;
